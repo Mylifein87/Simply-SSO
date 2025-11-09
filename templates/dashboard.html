@@ -1,0 +1,40 @@
+ <!DOCTYPE html>
+ <html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <link rel ="stylesheet" type="text/css" href="static/app.css">
+</head>
+
+<body>
+    <h2>Welcome <em>{{user.name}}</em> to my Single Sign On Project!</h2>
+    <p><strong>Email:</strong> {{user.email}}</p>
+
+    {% if user.picture %}
+    <img src="{{user.picture}}" alt="Profile picture" width="150">
+    {% endif %}
+
+    <br><br>
+    <a href="{{url_for('logout')}}">Log out</a>
+
+    <div class="services"
+        <img src={{url_for('static', filename ="icon.jpeg")}} alt = "Auth0 logo" height="300" width="300">
+    </div>
+
+    <div class="resources">
+        <img src="{{ url_for('static', filename='sales.jpg') }}" alt="dashboard" height="400" width="400">
+
+        <h3>Read a little bit about this project below.</h3>
+
+        <p>This project was written in Python using the Flask framework to provide a simple lightweight Single-On web app
+            I decided to get my hands dirty by implementing Auth0 as my identity service to provide<b>Authentication</b> and 
+            <b>Authorization</b> to my application. Upon successful authentication this project simulates an End User accessing a company resource. 
+            Continuing on with my learning I also decided to use <b>Docker</b> to deploy
+            and run this application which resulted in a few hours of errors and troubleshooting as a beginner with this technology
+            but overall was a fun project and learning experience.
+        </p>
+    </div>
+</body>
+
+ </html>

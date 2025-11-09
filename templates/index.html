@@ -1,0 +1,26 @@
+ <!DOCTYPE html>
+ <html>
+
+ <head>
+    <title>Single-Sign On Project</title>
+    <link rel ="stylesheet" type="text/css" href="static/app.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+ </head>
+
+ <body>
+ <h1>Welcome<br>to<br>my<br>Single Sign-on<br>Project!</h1>
+
+ <div class="contents">
+   <a href="{{url_for('login')}}"onclick="this.onclick=null;"> Please Login with SSO</a>
+   <img src="{{ url_for('static', filename='icon.jpeg')}}" alt="Auth0 Logo" width="300" height="300">
+  
+
+ </div>
+ 
+</body>
+
+
+
+
+ </html>
