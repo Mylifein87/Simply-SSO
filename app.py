@@ -56,7 +56,7 @@ def index():
 
 @app.route("/login")
 def login():
-    return auth0.authorize_redirect(redirect_uri="http://127.0.0.1:5000/callback")
+    return auth0.authorize_redirect(redirect_uri="http://165.227.187.41:5000/callback")
     #return auth0.authorize_redirect(redirect_uri=os.environ["AUTH0_CALLBACKURL"])
 
 
